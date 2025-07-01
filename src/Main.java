@@ -32,7 +32,6 @@ public class Main {
         int cardNumber = scanner.nextInt();
         if (cardNumber < 4 || cardNumber > 52 || (cardNumber % 4) != 0) {
             System.out.println("Número inválido de cartas.");
-            String[] args = {};
             return;
         }
 
@@ -98,6 +97,5 @@ public class Main {
         data.time = timeElapsed;
         leaderboardManager.add(data);
         leaderboardManager.saveToFile("leaderboard.txt");
-        String[] args = {};
     }
 }
