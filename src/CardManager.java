@@ -37,11 +37,6 @@ public class CardManager implements ICardManager {
     }
 
     @Override
-    public void clear() {
-        cards.clear();
-    }
-
-    @Override
     public void drawCards() {
         for (int i = 0; i < cards.size(); i += 4) {
             for (int j = 0; j < 11; j++) {
